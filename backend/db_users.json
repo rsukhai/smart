@@ -1,0 +1,16 @@
+[
+  {
+    "username": "Roman",
+    "password": "111",
+    "email": "rrr@ukr.net",
+    "phoneNumber": "096232323",
+    "age": "8"
+  },
+  {
+    "username": "Iryna",
+    "password": "Ira",
+    "email": "Ira",
+    "phoneNumber": "222",
+    "age": "13"
+  }
+]
