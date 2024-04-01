@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./SignupPage.css";
+import { useNavigate  } from "react-router-dom";
 // import { USERS } from "../backend/db.js"
 
 const SignupPage = () => {
@@ -32,11 +33,23 @@ const SignupPage = () => {
         const { name, value } = e.target;
         setFormData({
             ...formData,
-            [name]: value
+            [name]: value,
+            stars: "0",
+            newWords:"0",
+            favoriteGame:"null",
+            rank:"0",
+            achievements:"0"
         });
     };
-
+    const navigate = useNavigate ();
+    const [error, setError] = useState("");
     const handleSubmit = () => {
+
+        if (!formData.username || !formData.password || !formData.email || !formData.phoneNumber || !formData.age) {
+            setError("All fields are required"); // Встановлення повідомлення про помилку
+            return; // Завершення функції, щоб запобігти подальшому виконанню
+        }
+
         fetch('http://localhost:3001/signup', {
             method: 'POST',
             headers: {
@@ -53,6 +66,9 @@ const SignupPage = () => {
         .catch((error) => {
             console.error('Error:', error);
         });
+        navigate('/login',)
+        setError("");
+
     };
 
     return (

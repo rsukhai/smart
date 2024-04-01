@@ -1,19 +1,21 @@
 import "./LoginPage.css"
 import React from "react"
 import { useState, useEffect } from "react"
+import { useNavigate  } from "react-router-dom";
 
 const LoginPage = () => {
   const [username, setUsername] = useState("")
   const [password, setPassword] = useState("")
   const [userData, setUserData] = useState(null)
   const [loading, setLoading] = useState(true)
+  const navigate = useNavigate ();
 
   useEffect(() => {
     fetch('/api/db_users')
       .then((response) => response.json())
       .then((data) => {
         setUserData(data)
-        setLoading(false) // Позначаємо завершення завантаження даних
+        setLoading(false)
       })
       .catch((error) => console.error("Error fetching data:", error))
   }, [])
@@ -31,6 +33,7 @@ const LoginPage = () => {
   
     const user = userData.find(user => user.username === username && user.password === password);
     if (user) {
+      navigate('/profile', { state: { user } })
       console.log("Login and password are good");
     } else {
       console.log("Invalid username or password");
@@ -63,7 +66,7 @@ const LoginPage = () => {
           />
         </div>
         <div className="forgotPassword">
-          <a href="/signup">Forgot password?</a>
+          <a href="/frgtpg">Forgot password?</a>
         </div>
         <div className="buttonGoBox">
           <button className="buttonGo" onClick={handleClick}>

@@ -1,0 +1,243 @@
+@import url('https://fonts.cdnfonts.com/css/jua');
+
+body {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.homePageContainer {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    height: 130px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.logo {
+    width: 251px;
+    margin-right: 1200px;
+}
+
+.settings {
+    width: 40px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    width: 300px;
+}
+
+.ellipse {
+    width: 40px;
+    height: 40px;
+    background-color: #7A9AF0;
+    border-radius: 50%;
+}
+
+
+.aboutBox {
+    width: 1152px;
+    height: 750px;
+    border-radius: 50px;
+    background-color: #FFAF9E;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.titleAbout {
+    width: 623px;
+    height: 128px;
+    font-family: "Jua", sans-serif;
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 128px;
+    text-align: left;
+    color: #593D37;
+    margin-left: 70px;
+    margin-top: 20px;
+}
+
+.text {
+    width: 417px;
+    height: 394px;
+    font-family: "Jua", sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 76.8px;
+    text-align: left;
+    color: #FFF9F7;
+    margin-left: 70px;
+    margin-top: 20px;
+}
+
+.tryButton {
+    font-family: "Jua", sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 77px;
+    text-align: center;
+    color: #593D37;
+    background-color: #FFF9F7;
+    width: 421px;
+    height: 99px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    margin-top: 35px;
+    margin-left: 70px;
+    cursor: pointer;
+}
+
+.snake {
+    height: 500px;
+    position: absolute;
+    top: 300px;
+    left: 900px;
+}
+
+.whyUsContainer {
+    width: 1152px;
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.whyUsBox {
+    width: 306px;
+    height: 332px;
+    background-color: #FFE8E0;
+    border-radius: 50px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.whiteBox {
+    width: 170px;
+    height: 130px;
+    background-color: #FFF9F7;
+    margin-top: 50px;
+    border-radius: 20px;
+}
+
+.darkText {
+    width: 306px;
+    height: 57px;
+    font-family: "Jua", sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 76.8px;
+    text-align: center;
+    color: #593D37;
+    margin-left: 0;
+    margin-top: 40px;
+}
+
+.whyUs {
+    width: 1152px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.line {
+    width: 89px;
+    height: 40px;
+    margin-top: 5px;
+}
+
+.textWhyUsContainer {
+    width: 1152px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.textWhyUsBox {
+    width: 1152px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 80px;
+}
+
+.title {
+    font-family: "Jua", sans-serif;
+    font-size: 52px;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #7A9AF0;
+    margin: 0;
+}
+
+.textWhyUsText {
+    width: 1152px;
+    font-family: "Jua", sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 76.8px;
+    text-align: left;
+    color: #593D37;
+    margin: 0;
+}
+
+.highlightPink {
+    color: #FFAF9E;
+}
+
+.footer {
+    height: 300px;
+    width: 1900px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFAF9E;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.footerWightText {
+    font-family: "Jua", sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 160%;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FFF9F7;
+}
+
+.footerText {
+    display: flex;
+}
+
+.footerBlueText {
+    color: #7A9AF0;
+    padding-right: 10px;
+}

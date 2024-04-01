@@ -4,13 +4,71 @@
     "password": "111",
     "email": "rrr@ukr.net",
     "phoneNumber": "096232323",
-    "age": "8"
+    "age": 12,
+    "stars": "100",
+    "newWords": "0",
+    "favoriteGame": "snake",
+    "rank": "3",
+    "achievements": "3"
   },
   {
     "username": "Iryna",
     "password": "Ira",
     "email": "Ira",
     "phoneNumber": "222",
-    "age": "13"
+    "age": "13",
+    "stars": "10",
+    "newWords": "0",
+    "favoriteGame": "snake",
+    "rank": "3",
+    "achievements": "3"
+  },
+  {
+    "username": "1",
+    "password": "1",
+    "email": "1",
+    "phoneNumber": "1",
+    "age": 1,
+    "stars": "10",
+    "newWords": "0",
+    "favoriteGame": "snake",
+    "rank": "3",
+    "achievements": "3"
+  },
+  {
+    "username": "Asstro",
+    "password": "123",
+    "email": "123@gmail.com",
+    "phoneNumber": "111",
+    "age": "23",
+    "stars": "0",
+    "newWords": "0",
+    "favoriteGame": "null",
+    "rank": "0",
+    "achievements": "0"
+  },
+  {
+    "username": "2",
+    "password": "2",
+    "email": "2",
+    "phoneNumber": "2",
+    "age": "13",
+    "stars": "0",
+    "newWords": "0",
+    "favoriteGame": "null",
+    "rank": "0",
+    "achievements": "0"
+  },
+  {
+    "username": "313213",
+    "password": "123123",
+    "email": "123123",
+    "phoneNumber": "123123",
+    "age": "13",
+    "stars": "0",
+    "newWords": "0",
+    "favoriteGame": "null",
+    "rank": "0",
+    "achievements": "0"
   }
 ]
