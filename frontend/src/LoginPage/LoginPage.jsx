@@ -33,6 +33,8 @@ const LoginPage = () => {
   
     const user = userData.find(user => user.username === username && user.password === password);
     if (user) {
+      localStorage.setItem('user', JSON.stringify(user));
+      console.log(user);
       navigate('/profile', { state: { user } })
       console.log("Login and password are good");
     } else {

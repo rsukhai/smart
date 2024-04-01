@@ -4,7 +4,7 @@ import { BrowserRouter } from "react-router-dom";
 import AppRouter from "./AppRote";
 
 function App() {
-  return <BrowserRouter>
+  return <BrowserRouter >
       <AppRouter />
           </BrowserRouter>
 }

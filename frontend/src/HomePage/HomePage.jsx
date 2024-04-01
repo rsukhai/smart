@@ -1,16 +1,43 @@
 import "./HomePage.css"
 import React from "react"
+import { useNavigate } from 'react-router-dom';
+import { useEffect, useState } from "react";
 
 const HomePage = () => {
+
+    const [user, setUser] = useState(null);
+    let navigate = useNavigate();
+    function handleClick() {
+        navigate('/login');
+        localStorage.clear();
+      }
+
+    useEffect(() => {
+        // Отримання даних користувача з localStorage
+        const storedUser = localStorage.getItem('user');
+        if (storedUser) {
+          // Парсинг рядка JSON назад в об'єкт і збереження в стані
+          setUser(JSON.parse(storedUser));
+        }
+      }, []);
+    
+      if (!user) {
+        return <div>No user data</div>;
+      }
+
+
+    
 
     return (
         <div className="homePageContainer">
             <div className="header">
                 <img className="logo" src="../img/smartkids_logo2.png" alt="logo" />
                 <div className="menu">
-                    <div className="ellipse"></div>
-                    <div className="ellipse"></div>
-                    <div className="ellipse"></div>
+                    <button className="ellipse" onClick={handleClick}></button>
+                    
+                    <button className="ellipse"></button>
+                    <button className="ellipse"></button>
+
                     <img className="settings" src="../img/settings.png" alt="settings" />
                 </div>
             </div>

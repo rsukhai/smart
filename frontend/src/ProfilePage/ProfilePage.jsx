@@ -1,10 +1,23 @@
 import React from "react";
 import "./ProfilePage.css";
 import { useLocation } from "react-router-dom";
+import { useEffect, useState } from "react";
+
 
 const ProfilePage = () => {
-    const location = useLocation();
-    const { user } = location.state || {};
+    // const location = useLocation();
+    // const { user } = location.state || {};
+
+    const [user, setUser] = useState(null);
+
+     useEffect(() => {
+    // Отримання даних користувача з localStorage
+    const storedUser = localStorage.getItem('user');
+    if (storedUser) {
+      // Парсинг рядка JSON назад в об'єкт і збереження в стані
+      setUser(JSON.parse(storedUser));
+    }
+  }, []);
 
   if (!user) {
     return <div>No user data</div>;
