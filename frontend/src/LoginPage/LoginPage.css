@@ -3,12 +3,11 @@
 .root{
     background-color: rgba(255, 232, 224, 1);
 }
-body {
+/* body {
     display: flex;
     justify-content: center;
     margin: 0;
-    background-color: #FFE8E0;
-}
+} */
 
 .authorizationContainer {
     width: 1440px;
