@@ -22,12 +22,13 @@
 }
 
 .logo {
-    width: 251px;
+    width: 300px;
     margin-right: 1200px;
 }
 
-.settings {
-    width: 40px;
+.menuItem {
+    height: 40px;
+    cursor: pointer;
 }
 
 .menu {
@@ -38,14 +39,6 @@
     width: 300px;
 }
 
-.ellipse {
-    width: 40px;
-    height: 40px;
-    background-color: #7A9AF0;
-    border-radius: 50%;
-}
-
-
 .aboutBox {
     width: 1152px;
     height: 750px;
@@ -53,7 +46,7 @@
     background-color: #FFAF9E;
     margin-bottom: 100px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .titleAbout {
@@ -101,12 +94,15 @@
     margin-left: 70px;
     cursor: pointer;
 }
+.div2{
+    display: flex;
+    flex-direction: row;
+    gap: 76px;
+    width: 1000px;
+}
 
 .snake {
     height: 500px;
-    position: absolute;
-    top: 300px;
-    left: 900px;
 }
 
 .whyUsContainer {
@@ -114,10 +110,10 @@
     height: 350px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     align-items: center;
     margin-top: 30px;
     margin-bottom: 50px;
+    margin-right: 130px;
 }
 
 .whyUsBox {
@@ -240,4 +236,28 @@
 .footerBlueText {
     color: #7A9AF0;
     padding-right: 10px;
+}
+.ellipse {
+    background-color: transparent; /* Робить фон кнопки прозорим */
+    border: none;  /* Видаляє стандартні рамки кнопки */
+    cursor: pointer;  /* Змінює курсор на покажчик, коли наводиться на кнопку */
+    padding: 0; /* Видаляє стандартні відступи */
+}
+.settings {
+    display: block; /* Забезпечує, що картинка не буде мати відступів зверху чи знизу */
+    width: 50px; /* Задає ширину зображення */
+    height: auto; /* Забезпечує, що висота зображення буде пропорційною */
+}
+.menuItem {
+    height: 40px;
+    cursor: pointer;
+    background-color: white;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    width: 300px;
 }

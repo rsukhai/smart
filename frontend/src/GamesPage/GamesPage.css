@@ -1,0 +1,139 @@
+@import url('https://fonts.cdnfonts.com/css/jua');
+
+/* body {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+} */
+
+.homePageContainer {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    height: 130px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.logo {
+    width: 300px;
+    margin-right: 1200px;
+}
+
+.menuItem {
+    height: 40px;
+    cursor: pointer;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    width: 300px;
+}
+
+.title-games {
+    font-family: "Jua", sans-serif;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 102px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FFAF9E;
+}
+
+.games-container {
+    width: 1152px;
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+
+.game-box {
+    width: 230px;
+    height: 332px;
+    background-color: #FFE8E0;
+    border-radius: 50px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.white-box {
+    width: 130px;
+    height: 130px;
+    background-color: #FFF9F7;
+    margin-top: 50px;
+    border-radius: 20px;
+}
+
+.dark-text {
+    font-family: "Jua", sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 76.8px;
+    text-align: center;
+    color: #593D37;
+    margin-left: 0;
+}
+
+.game {
+    width: 80%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lines {
+    width: 89px;
+    height: 40px;
+    margin-top: 5px;
+}
+
+.footer {
+    height: 300px;
+    width: 1900px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFAF9E;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.footerWightText {
+    font-family: "Jua", sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 160%;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FFF9F7;
+}
+
+.footerText {
+    display: flex;
+}
+
+.footerBlueText {
+    color: #7A9AF0;
+    padding-right: 10px;
+}

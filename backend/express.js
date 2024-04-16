@@ -7,14 +7,14 @@ const cors = require('cors');
 const fs = require('fs');
 const path = require('path');
 
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3030;
 const app = express();
 
 app.use(cors());
 app.use(bodyParser.json());
 
 app.listen(PORT, () => {
-    console.log("Server is running on port 3001");
+    console.log("Server is running on port 3030");
 });
 app.get('/api/db_users', (req, res) => {
   res.sendFile(path.join(__dirname, 'db_users.json'));

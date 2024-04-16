@@ -10,7 +10,10 @@ const HomePage = () => {
     function handleClick() {
         navigate('/login');
         localStorage.clear();
-      }
+    }
+    function handleClick2() {
+        navigate('/games');
+    }
 
     useEffect(() => {
         // Отримання даних користувача з localStorage
@@ -33,19 +36,22 @@ const HomePage = () => {
             <div className="header">
                 <img className="logo" src="../img/smartkids_logo2.png" alt="logo" />
                 <div className="menu">
-                    <button className="ellipse" onClick={handleClick}></button>
+                    <button className="ellipse" onClick={handleClick}><img className="settings" src="../img/questions.png" alt="settings" /></button>
                     
-                    <button className="ellipse"></button>
-                    <button className="ellipse"></button>
+                    <button className="ellipse" onClick={handleClick2}><img className="settings" src="../img/games.png" alt="settings" /></button>
+                    <button className="ellipse"><img className="settings" src="../img/account.png" alt="settings" /></button>
+                    <button className="ellipse"><img className="settings" src="../img/settings.png" alt="settings" /></button>
 
-                    <img className="settings" src="../img/settings.png" alt="settings" />
+                    
                 </div>
             </div>
             <div className="aboutBox">
-                <div className="titleAbout">GREATINGSSSSS!</div>
+                <div><div className="titleAbout">GREATINGSSSSS!</div>
                 <div className="text">We are inviting you to the exciting world of learning English!</div>
-                <button className="tryButton">TRY!</button>
-                <img className="snake" src="../img/snake1.png" alt="snake" />
+                <button className="tryButton">TRY!</button></div>
+                <div><img className="snake" src="../img/snake1.png" alt="snake" /></div>
+                
+                
             </div>
             <div className="whyUsContainer">
                 <div className="whyUs">

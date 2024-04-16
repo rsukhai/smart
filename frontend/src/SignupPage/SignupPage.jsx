@@ -50,7 +50,7 @@ const SignupPage = () => {
             return; // Завершення функції, щоб запобігти подальшому виконанню
         }
 
-        fetch('http://localhost:3001/signup', {
+        fetch('http://localhost:3030/signup', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

@@ -1,7 +1,7 @@
 import React from "react";
 import "./ProfilePage.css";
-import { useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { useNavigate } from 'react-router-dom';
 
 
 const ProfilePage = () => {
@@ -18,6 +18,11 @@ const ProfilePage = () => {
       setUser(JSON.parse(storedUser));
     }
   }, []);
+  let navigate = useNavigate();
+    function handleClick() {
+        navigate('/login');
+        localStorage.clear();
+    }
 
   if (!user) {
     return <div>No user data</div>;
@@ -26,7 +31,12 @@ const ProfilePage = () => {
     return (
         <div className="profileContainer">
             <div className="banner">
-                <img className="burgerMenu" src="../img/burger-menu.svg" alt="burgerMenu" />
+            <div className="menu">
+                    <img className="menuItem" src="../img/questions.png" alt="questions" onClick={handleClick} />
+                    <img className="menuItem" src="../img/games.png" alt="games" onClick={handleClick} />
+                    <img className="menuItem" src="../img/account_white.png" alt="account" onClick={handleClick} />
+                    <img className="menuItem" src="../img/account_white.png" alt="settings" onClick={handleClick} />
+                </div>
                 <img className="snakeImg" src="../img/snake2.png" alt="snake" />
                 <img className="avatar" src="../img/avatar.png" alt="avatar" />
             </div>
