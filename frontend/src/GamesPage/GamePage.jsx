@@ -11,6 +11,10 @@ const GamePage = () => {
         navigate('/login');
         localStorage.clear();
     }
+    function handleClickSnake() {
+        navigate('/snake');
+
+    }
 
     useEffect(() => {
         // Отримання даних користувача з localStorage
@@ -44,9 +48,9 @@ const GamePage = () => {
 
             <div className="games-container">
                 <div className="game">
-                    <div className="game-box">
+                    <div className="game-box" onClick={handleClickSnake}>
                         <div className="white-box"></div>
-                        <div className="dark-text">Eat And Match</div>
+                        <div className="dark-text"> Eat And Match</div>
                     </div>
                     <img className="lines" src="../img/!!.png" alt="lines" />
                 </div>

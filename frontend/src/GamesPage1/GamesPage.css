@@ -6,7 +6,7 @@
     margin: 0;
 } */
 
-.homePageContainer {
+.GamesPageContainer {
     background-color: white;
     display: flex;
     justify-content: center;
@@ -39,29 +39,22 @@
     width: 300px;
 }
 
-.title-games {
-    font-family: "Jua", sans-serif;
-    font-size: 64px;
-    font-weight: 400;
-    line-height: 102px;
-    letter-spacing: 0em;
-    text-align: center;
-    color: #FFAF9E;
-}
 
-.games-container {
+.Games {
     width: 1152px;
     height: 350px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 150px;
-    margin-bottom: 100px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    margin-right: 130px;
+    margin-bottom: 200px;
 }
 
-.game-box {
-    width: 230px;
-    height: 332px;
+.GameBox {
+    width: 306px;
+    height: 450px;
     background-color: #FFE8E0;
     border-radius: 50px;
     margin-left: 60px;
@@ -70,17 +63,27 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: transform 0.3s ease, z-index 0.3s ease;
+  z-index: 1;
+  aspect-ratio: 1/1.5;
+    
+}
+.GameBox:hover{
+    transform: scale(1.1);
+    z-index: 2;
 }
 
-.white-box {
-    width: 130px;
-    height: 130px;
+.whiteBox1 {
+    width: 190px;
+    height: 190px;
     background-color: #FFF9F7;
-    margin-top: 50px;
+    margin-top: 60px;
     border-radius: 20px;
 }
 
-.dark-text {
+.darkText {
+    width: 306px;
+    height: 57px;
     font-family: "Jua", sans-serif;
     font-size: 40px;
     font-weight: 400;
@@ -88,20 +91,35 @@
     text-align: center;
     color: #593D37;
     margin-left: 0;
+    margin-top: 30px;
 }
-
-.game {
-    width: 80%;
-    height: 400px;
+.LearnAndPlay{
+    color: #FFAF9E;
+    display: flex;
+    text-align: center;
+    font-family: "Jua", sans-serif;
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 76.8px;
+    margin-bottom: 150px;
+}
+.Game {
+    width: 1152px;
+    height: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.lines {
+.line {
     width: 89px;
     height: 40px;
     margin-top: 5px;
+}
+
+
+.highlightPink {
+    color: #FFAF9E;
 }
 
 .footer {

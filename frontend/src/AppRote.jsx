@@ -8,6 +8,10 @@ import NewPasswordPage from "./NewPasswordPage/NewPasswordPage";
 import HomePage from "./HomePage/HomePage";
 import SnakeGame from "./Snake/Snake";
 import GamePage from "./GamesPage/GamePage";
+import GamesPages from "./GamesPage1/GamesPage";
+import RulesPage from "./RulesPage/RulesPage";
+import SnakeGame2 from "./snakeNew/SnakeGame";
+
 
 
 const AppRouter = () => {
@@ -20,9 +24,13 @@ const AppRouter = () => {
           <Route path="/frgtpg" exact element={<ForgotPasswordPage />} />
           <Route path="/nwpswrd" exact element={<NewPasswordPage />} />
           <Route path="/home" exact element={<HomePage />} />
-          <Route path="/snake" exact element={<SnakeGame />} />
+          {/* <Route path="/snake" exact element={<SnakeGame />} /> */}
           <Route path="/games" exact element={<GamePage />} />
+          {/* <Route path="/games2" exact element={<GamePages />} /> */}
+          <Route path="/rules" exact element={<RulesPage />} />
           {/* <Route path="*" element={<Navigate to="/" />} /> */}
+          <Route path="/snake" exact element={<SnakeGame2 />} />
+
         </Routes>
 
     );

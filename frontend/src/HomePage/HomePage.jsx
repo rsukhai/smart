@@ -7,13 +7,18 @@ const HomePage = () => {
 
     const [user, setUser] = useState(null);
     let navigate = useNavigate();
+
     function handleClick() {
         navigate('/login');
         localStorage.clear();
     }
-    function handleClick2() {
+    function handleClickGames() {
         navigate('/games');
     }
+    function handleClickProfile() {
+        navigate('/profile');
+    }
+
 
     useEffect(() => {
         // Отримання даних користувача з localStorage
@@ -38,9 +43,9 @@ const HomePage = () => {
                 <div className="menu">
                     <button className="ellipse" onClick={handleClick}><img className="settings" src="../img/questions.png" alt="settings" /></button>
                     
-                    <button className="ellipse" onClick={handleClick2}><img className="settings" src="../img/games.png" alt="settings" /></button>
-                    <button className="ellipse"><img className="settings" src="../img/account.png" alt="settings" /></button>
-                    <button className="ellipse"><img className="settings" src="../img/settings.png" alt="settings" /></button>
+                    <button className="ellipse" onClick={handleClickGames}><img className="settings" src="../img/games.png" alt="settings" /></button>
+                    <button className="ellipse"  onClick={handleClickProfile}><img className="settings" src="../img/account.png" alt="settings" /></button>
+                    <button className="ellipse" onClick={handleClickProfile} ><img className="settings" src="../img/settings.png" alt="settings" /></button>
 
                     
                 </div>
@@ -48,7 +53,7 @@ const HomePage = () => {
             <div className="aboutBox">
                 <div><div className="titleAbout">GREATINGSSSSS!</div>
                 <div className="text">We are inviting you to the exciting world of learning English!</div>
-                <button className="tryButton">TRY!</button></div>
+                <button className="tryButton" onClick={handleClickGames}>TRY!</button></div>
                 <div><img className="snake" src="../img/snake1.png" alt="snake" /></div>
                 
                 
